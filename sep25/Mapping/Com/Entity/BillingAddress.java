@@ -18,11 +18,17 @@ public class BillingAddress {
 
 	@Id
 	@GeneratedValue(strategy =GenerationType.AUTO)
+	@Column(name="billingAddress_id")
 	private Integer billingAddress_id;
+	@Column(name="address")
 	private String address;
+	@Column(name="city")
 	private String city;
+	@Column(name="state")
 	private String state;
+	@Column(name="zipcode")
 	private Integer zipcode;
+	@Column(name="country")
 	private String country;
 	
 	
